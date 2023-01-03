@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Chekout'){
             steps {
-                git branch: 'main', url: "git@github.com:top-secrett/Jenkins-pipeline.git"
+                git branch: 'main', url: "git@github.com:Nortsx/jenkinsansiblebook.git"
             }
         }
         stage('Deploy') {
