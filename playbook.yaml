@@ -5,3 +5,10 @@
     - name: "Debug"
       ansible.builtin.debug:
         msg: "Test debug"
+---
+- name: "Test Ping"
+  hosts: all
+  become: no
+  tasks:
+    - name: ping
+      ping:
